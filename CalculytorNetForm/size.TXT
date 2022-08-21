@@ -1,0 +1,3 @@
+button 50,
+form weigth 322, heigth 510
+panel 302 *  height 302
