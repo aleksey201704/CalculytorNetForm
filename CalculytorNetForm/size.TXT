@@ -1,3 +1,6 @@
-button 50,
-form weigth 322, heigth 510
+Panel button 50,
+form weigth 322, heigth 515
 panel 302 *  height 302
+
+top panel 302; 40
+panel Memory 302; 35
