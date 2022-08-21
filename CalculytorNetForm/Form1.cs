@@ -25,6 +25,7 @@ namespace CalculytorNetForm
         private void Form1_Resize(object sender, EventArgs e)
         {
             this.Text = this.Height.ToString();
+
         }
 
         private void button24_Click(object sender, EventArgs e)
