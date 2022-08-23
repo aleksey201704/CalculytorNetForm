@@ -31,9 +31,13 @@ namespace CalculytorNetForm
         {
             this.palHistoryMemory = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.button31 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
@@ -66,10 +70,6 @@ namespace CalculytorNetForm
             this.button27 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button32 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -78,9 +78,10 @@ namespace CalculytorNetForm
             // 
             // palHistoryMemory
             // 
-            this.palHistoryMemory.Location = new System.Drawing.Point(382, 0);
+            this.palHistoryMemory.Dock = System.Windows.Forms.DockStyle.Right;
+            this.palHistoryMemory.Location = new System.Drawing.Point(314, 2);
             this.palHistoryMemory.Name = "palHistoryMemory";
-            this.palHistoryMemory.Size = new System.Drawing.Size(200, 444);
+            this.palHistoryMemory.Size = new System.Drawing.Size(245, 467);
             this.palHistoryMemory.TabIndex = 0;
             this.palHistoryMemory.Visible = false;
             // 
@@ -94,8 +95,54 @@ namespace CalculytorNetForm
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 40);
+            this.panel2.Size = new System.Drawing.Size(312, 40);
             this.panel2.TabIndex = 1;
+            // 
+            // button33
+            // 
+            this.button33.AutoSize = true;
+            this.button33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button33.FlatAppearance.BorderSize = 0;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.White;
+            this.button33.Location = new System.Drawing.Point(265, 0);
+            this.button33.Margin = new System.Windows.Forms.Padding(0);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(47, 40);
+            this.button33.TabIndex = 3;
+            this.button33.Text = "◯";
+            this.button33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.AutoSize = true;
+            this.button32.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button32.FlatAppearance.BorderSize = 0;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.Color.White;
+            this.button32.Location = new System.Drawing.Point(149, 0);
+            this.button32.Margin = new System.Windows.Forms.Padding(0);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(41, 40);
+            this.button32.TabIndex = 2;
+            this.button32.Text = "◳";
+            this.button32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(37, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 40);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Обычный";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button31
             // 
@@ -122,7 +169,7 @@ namespace CalculytorNetForm
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(2, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(315, 91);
+            this.panel3.Size = new System.Drawing.Size(312, 91);
             this.panel3.TabIndex = 2;
             // 
             // textBox1
@@ -134,10 +181,18 @@ namespace CalculytorNetForm
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(0, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 68);
+            this.textBox1.Size = new System.Drawing.Size(299, 68);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(299, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(13, 91);
+            this.panel1.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -182,7 +237,7 @@ namespace CalculytorNetForm
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(315, 306);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 301);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // button24
@@ -196,7 +251,7 @@ namespace CalculytorNetForm
             this.button24.Location = new System.Drawing.Point(235, 251);
             this.button24.Margin = new System.Windows.Forms.Padding(1);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(79, 54);
+            this.button24.Size = new System.Drawing.Size(76, 49);
             this.button24.TabIndex = 23;
             this.button24.Text = "=";
             this.button24.UseVisualStyleBackColor = false;
@@ -213,7 +268,7 @@ namespace CalculytorNetForm
             this.button23.Location = new System.Drawing.Point(157, 251);
             this.button23.Margin = new System.Windows.Forms.Padding(1);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(76, 54);
+            this.button23.Size = new System.Drawing.Size(76, 49);
             this.button23.TabIndex = 22;
             this.button23.Text = ",";
             this.button23.UseVisualStyleBackColor = false;
@@ -230,7 +285,7 @@ namespace CalculytorNetForm
             this.button22.Location = new System.Drawing.Point(79, 251);
             this.button22.Margin = new System.Windows.Forms.Padding(1);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(76, 54);
+            this.button22.Size = new System.Drawing.Size(76, 49);
             this.button22.TabIndex = 21;
             this.button22.Text = "0";
             this.button22.UseVisualStyleBackColor = false;
@@ -246,7 +301,7 @@ namespace CalculytorNetForm
             this.button21.Location = new System.Drawing.Point(1, 251);
             this.button21.Margin = new System.Windows.Forms.Padding(1);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(76, 54);
+            this.button21.Size = new System.Drawing.Size(76, 49);
             this.button21.TabIndex = 20;
             this.button21.Text = "+/-";
             this.button21.UseVisualStyleBackColor = false;
@@ -262,7 +317,7 @@ namespace CalculytorNetForm
             this.button20.Location = new System.Drawing.Point(235, 201);
             this.button20.Margin = new System.Windows.Forms.Padding(1);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(79, 48);
+            this.button20.Size = new System.Drawing.Size(76, 48);
             this.button20.TabIndex = 19;
             this.button20.Text = "+";
             this.button20.UseVisualStyleBackColor = false;
@@ -326,7 +381,7 @@ namespace CalculytorNetForm
             this.button16.Location = new System.Drawing.Point(235, 151);
             this.button16.Margin = new System.Windows.Forms.Padding(1);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(79, 48);
+            this.button16.Size = new System.Drawing.Size(76, 48);
             this.button16.TabIndex = 15;
             this.button16.Text = "-";
             this.button16.UseVisualStyleBackColor = false;
@@ -390,7 +445,7 @@ namespace CalculytorNetForm
             this.button12.Location = new System.Drawing.Point(235, 101);
             this.button12.Margin = new System.Windows.Forms.Padding(1);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(79, 48);
+            this.button12.Size = new System.Drawing.Size(76, 48);
             this.button12.TabIndex = 11;
             this.button12.Text = "X";
             this.button12.UseVisualStyleBackColor = false;
@@ -454,7 +509,7 @@ namespace CalculytorNetForm
             this.button8.Location = new System.Drawing.Point(235, 51);
             this.button8.Margin = new System.Windows.Forms.Padding(1);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(79, 48);
+            this.button8.Size = new System.Drawing.Size(76, 48);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = false;
             // 
@@ -516,7 +571,7 @@ namespace CalculytorNetForm
             this.button4.Location = new System.Drawing.Point(235, 1);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 48);
+            this.button4.Size = new System.Drawing.Size(76, 48);
             this.button4.TabIndex = 3;
             this.button4.Text = "⇐";
             this.button4.UseVisualStyleBackColor = false;
@@ -589,7 +644,7 @@ namespace CalculytorNetForm
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(315, 35);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(312, 35);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // button30
@@ -599,9 +654,9 @@ namespace CalculytorNetForm
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Location = new System.Drawing.Point(55, 3);
+            this.button30.Location = new System.Drawing.Point(54, 3);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(46, 29);
+            this.button30.Size = new System.Drawing.Size(45, 29);
             this.button30.TabIndex = 5;
             this.button30.Text = "MS";
             this.button30.UseVisualStyleBackColor = true;
@@ -613,9 +668,9 @@ namespace CalculytorNetForm
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Location = new System.Drawing.Point(263, 3);
+            this.button29.Location = new System.Drawing.Point(258, 3);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(49, 29);
+            this.button29.Size = new System.Drawing.Size(51, 29);
             this.button29.TabIndex = 4;
             this.button29.Text = "M▿";
             this.button29.UseVisualStyleBackColor = true;
@@ -627,9 +682,9 @@ namespace CalculytorNetForm
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button28.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Location = new System.Drawing.Point(211, 3);
+            this.button28.Location = new System.Drawing.Point(207, 3);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(46, 29);
+            this.button28.Size = new System.Drawing.Size(45, 29);
             this.button28.TabIndex = 3;
             this.button28.Text = "M-";
             this.button28.UseVisualStyleBackColor = true;
@@ -642,9 +697,9 @@ namespace CalculytorNetForm
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button27.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Location = new System.Drawing.Point(159, 3);
+            this.button27.Location = new System.Drawing.Point(156, 3);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(46, 29);
+            this.button27.Size = new System.Drawing.Size(45, 29);
             this.button27.TabIndex = 2;
             this.button27.Text = "M+";
             this.button27.UseVisualStyleBackColor = true;
@@ -656,9 +711,9 @@ namespace CalculytorNetForm
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Location = new System.Drawing.Point(107, 3);
+            this.button26.Location = new System.Drawing.Point(105, 3);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(46, 29);
+            this.button26.Size = new System.Drawing.Size(45, 29);
             this.button26.TabIndex = 1;
             this.button26.Text = "MR";
             this.button26.UseVisualStyleBackColor = true;
@@ -672,71 +727,17 @@ namespace CalculytorNetForm
             this.button25.ForeColor = System.Drawing.Color.White;
             this.button25.Location = new System.Drawing.Point(3, 3);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(46, 29);
+            this.button25.Size = new System.Drawing.Size(45, 29);
             this.button25.TabIndex = 0;
             this.button25.Text = "МС";
             this.button25.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(37, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Обычный";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button32
-            // 
-            this.button32.AutoSize = true;
-            this.button32.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button32.FlatAppearance.BorderSize = 0;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(149, 0);
-            this.button32.Margin = new System.Windows.Forms.Padding(0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(41, 40);
-            this.button32.TabIndex = 2;
-            this.button32.Text = "◳";
-            this.button32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(302, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(13, 91);
-            this.panel1.TabIndex = 1;
-            // 
-            // button33
-            // 
-            this.button33.AutoSize = true;
-            this.button33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button33.FlatAppearance.BorderSize = 0;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Location = new System.Drawing.Point(268, 0);
-            this.button33.Margin = new System.Windows.Forms.Padding(0);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(47, 40);
-            this.button33.TabIndex = 3;
-            this.button33.Text = "◯";
-            this.button33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button33.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(319, 476);
+            this.ClientSize = new System.Drawing.Size(561, 471);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel3);

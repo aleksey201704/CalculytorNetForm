@@ -12,6 +12,7 @@ namespace CalculytorNetForm
 {
     public partial class Form1 : Form
     {
+        public int countpanel { get; set; } = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,12 +20,25 @@ namespace CalculytorNetForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.Height = 510;
+            this.Width = 335;
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            this.Text = this.Height.ToString();
+            
+            this.Text = palHistoryMemory.Width.ToString();
+            if (this.Width < 335) this.Width = 335;
+            if (this.Height < 510) this.Height = 510;
+
+            if (this.Width >= 575)
+            { 
+                palHistoryMemory.Visible = true;
+                palHistoryMemory.Width=palHistoryMemory.Width + 2;
+            } 
+            else palHistoryMemory.Visible = false;
+            
+
 
         }
 

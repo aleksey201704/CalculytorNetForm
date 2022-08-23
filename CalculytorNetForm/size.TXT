@@ -4,3 +4,5 @@ panel 302 *  height 302
 
 top panel 302; 40
 panel Memory 302; 35
+panelHistory 245,467
+
