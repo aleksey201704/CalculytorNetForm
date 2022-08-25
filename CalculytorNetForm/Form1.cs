@@ -30,7 +30,11 @@ namespace CalculytorNetForm
             this.Text = palHistoryMemory.Width.ToString();
             if (this.Width < 335)  this.Width = 335;
              
-              
+              // изменеие по Height
+            if (this.Height >= 510)
+            {
+                panel3.Height = (this.Height * 20) / 100;
+            }
             
             if (this.Height < 510) this.Height = 510;
 
@@ -63,6 +67,11 @@ namespace CalculytorNetForm
         private void button28_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Visible = true;
         }
     }
 }
