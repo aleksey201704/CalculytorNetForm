@@ -28,13 +28,21 @@ namespace CalculytorNetForm
         {
             
             this.Text = palHistoryMemory.Width.ToString();
-            if (this.Width < 335) this.Width = 335;
+            if (this.Width < 335)  this.Width = 335;
+             
+              
+            
             if (this.Height < 510) this.Height = 510;
 
             if (this.Width >= 575)
             { 
                 palHistoryMemory.Visible = true;
-                palHistoryMemory.Width=palHistoryMemory.Width + 2;
+                if (palHistoryMemory.Width >= 325)
+                { 
+                    palHistoryMemory.Width = 325;
+                    return;
+                }
+                palHistoryMemory.Width = (this.Width * 42) / 100;
             } 
             else palHistoryMemory.Visible = false;
             
