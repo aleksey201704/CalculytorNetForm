@@ -27,7 +27,9 @@ namespace CalculytorNetForm
         private void Form1_Resize(object sender, EventArgs e)
         {
             
-            this.Text = palHistoryMemory.Width.ToString();
+            
+
+            menuStrip1.Visible = false;
             if (this.Width < 335)  this.Width = 335;
              
               // изменеие по Height
@@ -72,6 +74,17 @@ namespace CalculytorNetForm
         private void button31_Click(object sender, EventArgs e)
         {
             menuStrip1.Visible = true;
+        }
+
+        private void button31_Click_1(object sender, EventArgs e)
+        {
+            menuStrip1.Visible=true;
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            this.Width = 580;
+            button33.Visible=false;
         }
     }
 }
